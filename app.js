@@ -3,19 +3,15 @@ document.addEventListener("click", (ev) => {
   const targetElClas = Array.from(targetEl.classList);
 
   if (targetElClas.includes("start")) display("#screen");
-  if (targetElClas.includes("instruction") || targetElClas.includes("back")) {
-    display("#intro");
-    currentSection = previousSection;
-  }
+  if (targetElClas.includes("instruction")) display("#welcome");
+  if (targetElClas.includes("back")) display(previousSection);
 });
 
 const findEl = (ele) => document.querySelector(`${ele}`);
-let currentSection = "#welcome";
+let currentSection = "#home";
 let previousSection;
 
 const display = (section) => {
-  console.log(findEl(currentSection));
-  console.log(findEl(section));
   toggle(findEl(currentSection), "hidden");
   toggle(findEl(section), "hidden");
   previousSection = currentSection;

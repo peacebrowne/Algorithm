@@ -8,7 +8,7 @@
     <link rel="icon" href="./img/algorithm-favicon.svg" />
   </head>
   <body class="bg-black h-screen flex md:justify-center">
-    <section class="section hidden m-auto" id="welcome">
+    <section class="section m-auto" id="home">
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@
       </div>
     </section>
 
-    <section class="section m-auto hidden px-10" id="intro">
+    <section class="section m-auto hidden px-10" id="welcome">
       <div class="py-10 md:px-56">
         <h1 class="pl-3 text-primary font-bold text-4xl md:text-8xl">
           Welcome !!
@@ -61,12 +61,11 @@
         </p>
         <div class="flex px-4">
           <span class="btn text-white border back">back</span>
-          <span class="btn text-white border ml-3 start">Start</span>
         </div>
       </div>
     </section>
 
-    <main class="grid md:grid-cols-4 w-full h-full">
+    <main class="grid md:grid-cols-4 hidden w-full h-full" id="screen">
       <div>
         <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
         <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
@@ -97,7 +96,7 @@
               </div>
 
               <!-- Sidebar component, swap this element with another sidebar if you like -->
-              <div
+              <aside
                 class="flex grow flex-col gap-y-5 overflow-y-auto bg-black px-6 pb-4 ring-1 ring-white/10"
               >
                 <div class="flex h-auto shrink-0 items-center">
@@ -150,7 +149,7 @@
                 <span class="btn text-white border mt-auto text-center back"
                   >back</span
                 >
-              </div>
+              </aside>
             </div>
           </div>
         </div>
