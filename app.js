@@ -14,6 +14,8 @@ let currentSection = "#welcome";
 let previousSection;
 
 const display = (section) => {
+  console.log(findEl(currentSection));
+  console.log(findEl(section));
   toggle(findEl(currentSection), "hidden");
   toggle(findEl(section), "hidden");
   previousSection = currentSection;

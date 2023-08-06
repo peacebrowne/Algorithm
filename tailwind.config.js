@@ -11,6 +11,10 @@ module.exports = {
         },
       },
 
+      backgroundImage: {
+        "hero-pattern": "url('./img/chat-bg.png')",
+      },
+
       fontFamily: {
         nunito: ["nunito sans"],
       },
